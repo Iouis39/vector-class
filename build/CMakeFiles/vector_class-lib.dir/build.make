@@ -69,24 +69,10 @@ include CMakeFiles/vector_class-lib.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/vector_class-lib.dir/flags.make
 
-CMakeFiles/vector_class-lib.dir/src/vector.cpp.o: CMakeFiles/vector_class-lib.dir/flags.make
-CMakeFiles/vector_class-lib.dir/src/vector.cpp.o: ../src/vector.cpp
-CMakeFiles/vector_class-lib.dir/src/vector.cpp.o: CMakeFiles/vector_class-lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/louisgrunberg/Desktop/practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/vector_class-lib.dir/src/vector.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/vector_class-lib.dir/src/vector.cpp.o -MF CMakeFiles/vector_class-lib.dir/src/vector.cpp.o.d -o CMakeFiles/vector_class-lib.dir/src/vector.cpp.o -c /Users/louisgrunberg/Desktop/practice/src/vector.cpp
-
-CMakeFiles/vector_class-lib.dir/src/vector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vector_class-lib.dir/src/vector.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/louisgrunberg/Desktop/practice/src/vector.cpp > CMakeFiles/vector_class-lib.dir/src/vector.cpp.i
-
-CMakeFiles/vector_class-lib.dir/src/vector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vector_class-lib.dir/src/vector.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/louisgrunberg/Desktop/practice/src/vector.cpp -o CMakeFiles/vector_class-lib.dir/src/vector.cpp.s
-
 CMakeFiles/vector_class-lib.dir/src/main.cpp.o: CMakeFiles/vector_class-lib.dir/flags.make
 CMakeFiles/vector_class-lib.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/vector_class-lib.dir/src/main.cpp.o: CMakeFiles/vector_class-lib.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/louisgrunberg/Desktop/practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/vector_class-lib.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/louisgrunberg/Desktop/practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/vector_class-lib.dir/src/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/vector_class-lib.dir/src/main.cpp.o -MF CMakeFiles/vector_class-lib.dir/src/main.cpp.o.d -o CMakeFiles/vector_class-lib.dir/src/main.cpp.o -c /Users/louisgrunberg/Desktop/practice/src/main.cpp
 
 CMakeFiles/vector_class-lib.dir/src/main.cpp.i: cmake_force
@@ -99,17 +85,15 @@ CMakeFiles/vector_class-lib.dir/src/main.cpp.s: cmake_force
 
 # Object files for target vector_class-lib
 vector_class__lib_OBJECTS = \
-"CMakeFiles/vector_class-lib.dir/src/vector.cpp.o" \
 "CMakeFiles/vector_class-lib.dir/src/main.cpp.o"
 
 # External object files for target vector_class-lib
 vector_class__lib_EXTERNAL_OBJECTS =
 
-libvector_class-lib.a: CMakeFiles/vector_class-lib.dir/src/vector.cpp.o
 libvector_class-lib.a: CMakeFiles/vector_class-lib.dir/src/main.cpp.o
 libvector_class-lib.a: CMakeFiles/vector_class-lib.dir/build.make
 libvector_class-lib.a: CMakeFiles/vector_class-lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/louisgrunberg/Desktop/practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libvector_class-lib.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/louisgrunberg/Desktop/practice/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libvector_class-lib.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/vector_class-lib.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vector_class-lib.dir/link.txt --verbose=$(VERBOSE)
 

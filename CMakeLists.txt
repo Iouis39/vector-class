@@ -16,7 +16,7 @@ endif()
 ## lib
 
 add_library(${project_name}-lib
-        src/vector.cpp
+        src/main.cpp
         )
 
 target_link_libraries(${project_name}-lib

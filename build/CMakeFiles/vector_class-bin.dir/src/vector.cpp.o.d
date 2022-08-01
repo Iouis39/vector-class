@@ -1,4 +1,4 @@
-CMakeFiles/vector_class-lib.dir/src/vector.cpp.o: \
+CMakeFiles/vector_class-bin.dir/src/vector.cpp.o: \
   /Users/louisgrunberg/Desktop/practice/src/vector.cpp \
   /Users/louisgrunberg/Desktop/practice/src/vector.hpp \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1/iostream \

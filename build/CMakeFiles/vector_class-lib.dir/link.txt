@@ -1,2 +1,2 @@
-/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libvector_class-lib.a "CMakeFiles/vector_class-lib.dir/src/vector.cpp.o" "CMakeFiles/vector_class-lib.dir/src/main.cpp.o"
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ar qc libvector_class-lib.a "CMakeFiles/vector_class-lib.dir/src/main.cpp.o"
 /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib libvector_class-lib.a

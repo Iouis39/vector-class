@@ -85,12 +85,12 @@ clean: CMakeFiles/vector_class-test.dir/clean
 CMakeFiles/vector_class-lib.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_class-lib.dir/build.make CMakeFiles/vector_class-lib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_class-lib.dir/build.make CMakeFiles/vector_class-lib.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/louisgrunberg/Desktop/practice/build/CMakeFiles --progress-num=3,4,5 "Built target vector_class-lib"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/louisgrunberg/Desktop/practice/build/CMakeFiles --progress-num=3,4 "Built target vector_class-lib"
 .PHONY : CMakeFiles/vector_class-lib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/vector_class-lib.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/louisgrunberg/Desktop/practice/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/louisgrunberg/Desktop/practice/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/vector_class-lib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/louisgrunberg/Desktop/practice/build/CMakeFiles 0
 .PHONY : CMakeFiles/vector_class-lib.dir/rule
@@ -116,7 +116,7 @@ CMakeFiles/vector_class-bin.dir/all: CMakeFiles/vector_class-lib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/vector_class-bin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/louisgrunberg/Desktop/practice/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/louisgrunberg/Desktop/practice/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/vector_class-bin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/louisgrunberg/Desktop/practice/build/CMakeFiles 0
 .PHONY : CMakeFiles/vector_class-bin.dir/rule
@@ -137,12 +137,12 @@ CMakeFiles/vector_class-bin.dir/clean:
 CMakeFiles/vector_class-test.dir/all: CMakeFiles/vector_class-lib.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_class-test.dir/build.make CMakeFiles/vector_class-test.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/vector_class-test.dir/build.make CMakeFiles/vector_class-test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/louisgrunberg/Desktop/practice/build/CMakeFiles --progress-num=6,7 "Built target vector_class-test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/louisgrunberg/Desktop/practice/build/CMakeFiles --progress-num=5,6 "Built target vector_class-test"
 .PHONY : CMakeFiles/vector_class-test.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/vector_class-test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/louisgrunberg/Desktop/practice/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/louisgrunberg/Desktop/practice/build/CMakeFiles 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/vector_class-test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/louisgrunberg/Desktop/practice/build/CMakeFiles 0
 .PHONY : CMakeFiles/vector_class-test.dir/rule

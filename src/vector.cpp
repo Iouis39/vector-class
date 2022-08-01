@@ -1,7 +1,8 @@
+#include "vector.hpp"
+
 #include <iostream>
 #include <cmath>
 
-#include "vector.hpp"
 
 template<typename T>
 T Vec3<T>::length() const {
@@ -30,3 +31,6 @@ void Vec3<T>::print() {
     std::cout << "Z-Coordinate: " << z << '\n';
 }
 
+int main() {
+    return 0;
+}
