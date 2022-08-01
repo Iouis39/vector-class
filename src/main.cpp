@@ -3,14 +3,14 @@
 #include <iostream>
 
 int main() {
-    Vec3<double> vec;
-    vec.x = 5;
-    vec.y = 1;
-    vec.z = 3;
+    Vec3<double> vec(2, 3, 4);
+    Vec3<double> vec2(4, 5, 6);
+    Vec3<double> vec3;
 
-    Vec3<double> unitVec = vec.normalize();
+    vec3 = vec + vec2;
 
-    std::cout << unitVec.length() << '\n';
-
+    vec.print();
+    vec2.print();
+    vec3.print();
     return 0;
 }

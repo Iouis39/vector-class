@@ -13,6 +13,15 @@ class Vec3 {
         Vec3(T xValue, T yValue, T zValue) : x(xValue), y(yValue), z(zValue) {}
         T x, y, z;
 
+        Vec3 operator+(Vec3<T> vec) {
+           Vec3<T> sum;
+           sum.x = x + vec.x;
+           sum.y = y + vec.y;
+           sum.z = z + vec.z;
+
+           return sum;
+        } 
+
         T length() const {
             return sqrt(x * x + y * y + z * z);
         }
@@ -31,12 +40,12 @@ class Vec3 {
             return unitVector;
         }
 
-
-
         void print() {
-            std::cout << "X-Coordinate: " << x << '\n';
-            std::cout << "Y-Coordinate: " << y << '\n';
-            std::cout << "Z-Coordinate: " << z << '\n';
+            std::cout << "[";
+            std::cout << "{\"X\": " << x << ',' << std::endl;
+            std::cout << "\"Y\": " << y << ',' << std::endl;
+            std::cout << "\"Z\": " << x << "}" << std::endl;
+            std::cout << "]" << std::endl;
         }
         
 };
