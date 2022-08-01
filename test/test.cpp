@@ -4,12 +4,11 @@
 
 #include "vector.hpp"
 
-TEST_CASE("tests if vector get's normalized correctly") {
-    Vec3<int> Vec;
-    Vec.x = 3;
-    Vec.y = 7;
-    Vec.z = 2;
+TEST_CASE("tests if normalized vector has length of 1") {
+    Vec3<double> Vec(1, 3, 4);
 
-    Vec3<int> unitVec = Vec.normalize();
-    CHECK(unitVec.length() == 0);
+    Vec3<double> unitVec = Vec.normalize();
+    CHECK(unitVec.length() == 1);
 }
+
+//TEST_CASE("tests if ")
