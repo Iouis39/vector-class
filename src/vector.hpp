@@ -1,4 +1,5 @@
 #pragma once
+
 #include <iostream>
 #include <cmath>
 
@@ -39,3 +40,4 @@ class Vec3 {
         }
         
 };
+
