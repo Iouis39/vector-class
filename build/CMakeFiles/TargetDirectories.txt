@@ -1,6 +1,0 @@
-/Users/louisgrunberg/Desktop/practice/build/CMakeFiles/vector_class-lib.dir
-/Users/louisgrunberg/Desktop/practice/build/CMakeFiles/vector_class-bin.dir
-/Users/louisgrunberg/Desktop/practice/build/CMakeFiles/vector_class-test.dir
-/Users/louisgrunberg/Desktop/practice/build/CMakeFiles/test.dir
-/Users/louisgrunberg/Desktop/practice/build/CMakeFiles/edit_cache.dir
-/Users/louisgrunberg/Desktop/practice/build/CMakeFiles/rebuild_cache.dir
