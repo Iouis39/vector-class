@@ -57,12 +57,7 @@ TEST_CASE("testing Vec3 -- complex subtraction") {
     Vec3<double> Vec3;
 
     Vec3 = Vec1 - Vec2;
-
-    double diffX = Vec3.x - 3.767;
-    double diffY = Vec3.y - 4.383;
-    double diffZ = Vec3.z - -2.762;
-
-    CHECK(std::abs(diffX) <= 0.01);
-    CHECK(std::abs(diffY) <= 0.01);
-    CHECK(std::abs(diffZ) <= 0.01);
+    doctest::Approx(Vec3.x == 3.767);
+    doctest::Approx(Vec3.y == 4.383);
+    doctest::Approx(Vec3.z == -2.762);
 }
