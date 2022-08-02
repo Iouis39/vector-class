@@ -3,14 +3,14 @@
 #include <iostream>
 
 int main() {
-    Vec3<double> vec(2, 3, 4);
-    Vec3<double> vec2(4, 5, 6);
-    Vec3<double> vec3;
+    Vec3<double> vec(2, 1, 1);
+    Vec3<double> vec2;
+    double factor = 2;
 
-    vec3 = vec + vec2;
+    vec2 = vec * factor;
 
     vec.print();
     vec2.print();
-    vec3.print();
+
     return 0;
 }
