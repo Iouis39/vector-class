@@ -24,9 +24,9 @@ TEST_CASE("testing Vec3 -- simple addition") {
     Vec3<int> Vec3;
 
     Vec3 = Vec1 + Vec2;
-    CHECK(Vec3.x == 8);
-    CHECK(Vec3.y == 14);
-    CHECK(Vec3.z == 13);
+    CHECK(Vec3.getX() == 8);
+    CHECK(Vec3.getY() == 14);
+    CHECK(Vec3.getZ() == 13);
 }
 
 TEST_CASE("testing Vec3 -- complex addition") {
@@ -35,9 +35,9 @@ TEST_CASE("testing Vec3 -- complex addition") {
     Vec3<double> Vec3;
 
     Vec3 = Vec1 + Vec2;
-    CHECK(Vec3.x == 6.013);
-    CHECK(Vec3.y == 10.183);
-    CHECK(Vec3.z == 8.562);
+    CHECK(Vec3.getX() == 6.013);
+    CHECK(Vec3.getY() == 10.183);
+    CHECK(Vec3.getZ() == 8.562);
 }
 
 TEST_CASE("testing Vec3 -- simple subtraction") {
@@ -46,9 +46,9 @@ TEST_CASE("testing Vec3 -- simple subtraction") {
     Vec3<int> Vec3;
 
     Vec3 = Vec1 - Vec2;
-    CHECK(Vec3.x == -4);
-    CHECK(Vec3.y == -4);
-    CHECK(Vec3.z == -7);
+    CHECK(Vec3.getX() == -4);
+    CHECK(Vec3.getY() == -4);
+    CHECK(Vec3.getZ() == -7);
 }
 
 TEST_CASE("testing Vec3 -- complex subtraction") {
@@ -57,9 +57,9 @@ TEST_CASE("testing Vec3 -- complex subtraction") {
     Vec3<double> Vec3;
 
     Vec3 = Vec1 - Vec2;
-    doctest::Approx(Vec3.x == 3.767);
-    doctest::Approx(Vec3.y == 4.383);
-    doctest::Approx(Vec3.z == -2.762);
+    doctest::Approx(Vec3.getX() == 3.767);
+    doctest::Approx(Vec3.getY() == 4.383);
+    doctest::Approx(Vec3.getZ() == -2.762);
 }
 
 TEST_CASE("testing Vec3 -- multiplication with two vectors") {
@@ -68,9 +68,9 @@ TEST_CASE("testing Vec3 -- multiplication with two vectors") {
     Vec3<double> Vec3;
 
     Vec3 = Vec1 * Vec2;
-    doctest::Approx(Vec3.x == 13.02);
-    doctest::Approx(Vec3.y == 14.56);
-    doctest::Approx(Vec3.z == -24.176);
+    doctest::Approx(Vec3.getX() == 13.02);
+    doctest::Approx(Vec3.getY() == 14.56);
+    doctest::Approx(Vec3.getZ() == -24.176);
 }
 
 TEST_CASE("testing Vec3 -- multiplication with vector and scalar") {
@@ -79,9 +79,9 @@ TEST_CASE("testing Vec3 -- multiplication with vector and scalar") {
     Vec3<double> Vec3;
 
     Vec3 = Vec1 * scalar;
-    doctest::Approx(Vec3.x == 6.72);
-    doctest::Approx(Vec3.y == 14.56);
-    doctest::Approx(Vec3.z == 24.176);
+    doctest::Approx(Vec3.getX() == 6.72);
+    doctest::Approx(Vec3.getY() == 14.56);
+    doctest::Approx(Vec3.getZ() == 24.176);
 }
 
 TEST_CASE("testing Vec3 -- crossproduct") {
@@ -89,7 +89,7 @@ TEST_CASE("testing Vec3 -- crossproduct") {
     Vec3<double> Vec2(1.2, 3.4, 1.9);
     Vec3<double> Vec3 = Vec1.crossProduct(Vec2);
 
-    doctest::Approx(Vec3.x == 8.45);
-    doctest::Approx(Vec3.y == -7.71);
-    doctest::Approx(Vec3.z == 8.46);
+    doctest::Approx(Vec3.getX() == 8.45);
+    doctest::Approx(Vec3.getY() == -7.71);
+    doctest::Approx(Vec3.getZ() == 8.46);
 }

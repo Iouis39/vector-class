@@ -6,20 +6,27 @@
 
 template<typename T>
 class Vec3 {
+    private:
+        T x, y, z;
 
     public:
         constexpr Vec3() : x(T(0)), y(T(0)), z(T(0)) {}
         constexpr Vec3(const T &xyzValue) : x(xyzValue), y(xyzValue), z(xyzValue) {}
         constexpr Vec3(T xValue, T yValue, T zValue) : x(xValue), y(yValue), z(zValue) {}
-        T x, y, z;
 
-        Vec3 operator+(const Vec3<T> summand) const; 
+        Vec3 operator+(const Vec3<T> &summand) const; 
 
-        Vec3 operator-(const Vec3<T> subtrahend) const;
+        Vec3 operator-(const Vec3<T> &subtrahend) const;
 
-        T operator*(const Vec3<T> factor) const; 
+        T operator*(const Vec3<T> &factor) const; 
 
-        Vec3 operator*(const T factor) const;
+        Vec3 operator*(const T &factor) const;
+
+        T getX();
+
+        T getY();
+
+        T getZ();
 
         T length() const;
 
@@ -31,6 +38,21 @@ class Vec3 {
 };
 
 /* ***************************************************************** */
+
+template<typename T>
+T Vec3<T>::getX() {
+    return x;
+}
+
+template<typename T>
+T Vec3<T>::getY() {
+    return y;
+}
+
+template<typename T>
+T Vec3<T>::getZ() {
+    return z;
+}
 
 template<typename T> 
 T Vec3<T>::length() const {
@@ -60,7 +82,7 @@ Vec3<T> Vec3<T>::crossProduct(const Vec3<T> vec) const{
     crossVec.y = z * vec.x - x * vec.z;
     crossVec.z = x * vec.y - y * vec.x;
 
-            return crossVec;
+    return crossVec;
 }
 
 template<typename T>
@@ -76,7 +98,7 @@ void Vec3<T>::print() const {
 /* ***************************************************************** */
 
 template<typename T>
-Vec3<T> Vec3<T>::operator+(const Vec3<T> summand) const {
+Vec3<T> Vec3<T>::operator+(const Vec3<T> &summand) const {
     Vec3<T> sum;
     sum.x = x + summand.x;
     sum.y = y + summand.y;
@@ -86,7 +108,7 @@ Vec3<T> Vec3<T>::operator+(const Vec3<T> summand) const {
 }
 
 template<typename T>
-Vec3<T> Vec3<T>:: operator-(const Vec3<T> subtrahend) const {
+Vec3<T> Vec3<T>::operator-(const Vec3<T> &subtrahend) const {
     Vec3<T> diff;
     diff.x = x - subtrahend.x;
     diff.y = y - subtrahend.y;
@@ -96,7 +118,7 @@ Vec3<T> Vec3<T>:: operator-(const Vec3<T> subtrahend) const {
 }
 
 template<typename T>
-T Vec3<T>::operator*(const Vec3<T> factor) const {
+T Vec3<T>::operator*(const Vec3<T> &factor) const {
     T scalar;
     scalar = x * factor.x + y * factor.y + z * factor.z;
 
@@ -104,7 +126,7 @@ T Vec3<T>::operator*(const Vec3<T> factor) const {
 }
 
 template<typename T>
-Vec3<T> Vec3<T>::operator*(const T factor) const {
+Vec3<T> Vec3<T>::operator*(const T &factor) const {
     Vec3<T> product;
     product.x = x * factor;
     product.y = y * factor;
