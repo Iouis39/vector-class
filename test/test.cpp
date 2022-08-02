@@ -61,3 +61,35 @@ TEST_CASE("testing Vec3 -- complex subtraction") {
     doctest::Approx(Vec3.y == 4.383);
     doctest::Approx(Vec3.z == -2.762);
 }
+
+TEST_CASE("testing Vec3 -- multiplication with two vectors") {
+    Vec3<double> Vec1(2.1, 4.55, 7.555);
+    Vec3<double> Vec2(6.2, 3.2, -3.2);
+    Vec3<double> Vec3;
+
+    Vec3 = Vec1 * Vec2;
+    doctest::Approx(Vec3.x == 13.02);
+    doctest::Approx(Vec3.y == 14.56);
+    doctest::Approx(Vec3.z == -24.176);
+}
+
+TEST_CASE("testing Vec3 -- multiplication with vector and scalar") {
+    Vec3<double> Vec1(2.1, 4.55, 7.555);
+    double scalar = 3.2;
+    Vec3<double> Vec3;
+
+    Vec3 = Vec1 * scalar;
+    doctest::Approx(Vec3.x == 6.72);
+    doctest::Approx(Vec3.y == 14.56);
+    doctest::Approx(Vec3.z == 24.176);
+}
+
+TEST_CASE("testing Vec3 -- crossproduct") {
+    Vec3<double> Vec1(5.1, 7.4, 1.65);
+    Vec3<double> Vec2(1.2, 3.4, 1.9);
+    Vec3<double> Vec3 = Vec1.crossProduct(Vec2);
+
+    doctest::Approx(Vec3.x == 8.45);
+    doctest::Approx(Vec3.y == -7.71);
+    doctest::Approx(Vec3.z == 8.46);
+}
